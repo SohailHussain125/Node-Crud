@@ -13,7 +13,7 @@ const multer = require('multer');
 
 
 mongoose.Promise = require('bluebird');
-mongoose.connect('mongodb://localhost:27017/test?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&3t.uriVersion=3&3t.connection.name=local&3t.alwaysShowAuthDB=true&3t.alwaysShowDBFromUserRole=true', { useNewUrlParser: true })
+mongoose.connect('mongodb+srv://sohail:Sohail@786@cluster0.kn8zw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', { useNewUrlParser: true })
   .then(() => {
     console.log('Start');
   })
